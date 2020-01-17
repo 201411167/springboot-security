@@ -32,8 +32,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
-                .antMatchers("/admin/**").hasRole("ROLE_ADMIN")
-                .antMatchers("/user/myinfo").hasRole("ROLE_MEMBER")
+                .antMatchers("/admin/**").hasRole("ADMIN")
+                .antMatchers("/user/myinfo").hasRole("MEMBER")
                 .antMatchers("/**").permitAll();
         http.formLogin()
                 //.loginPage( i want to use default login page supported by spring )
