@@ -1,0 +1,12 @@
+spring:
+  mustache:
+    prefix: classpath:/templates/
+    suffix: .hbs
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/test
+  datasource:
+    driver-class-name: org.h2.Driver
